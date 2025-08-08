@@ -67,3 +67,20 @@ score_info="""
 100\t8\t88
 """
 print(score_info)
+
+##################################
+# 문자열은 변경이 불가능(Immutable)한 속성을 가지고 있다.
+
+str1 = "Life is too short"
+print(f"str1: {str1}")
+print(f"str1[0]: {str1[0]}")
+# str1[0]='N' # 변경 불가능하기 때문에 에러 발생
+# str1.replace("Life", "Your leg")
+# Immutalbe 한 타입의 멤버 메소드는 자기 자신을 변경할 수 없기때문에
+# 변경된 값을 반환하는 특징을 가지고 있다.
+print(f'str1.replace("Life", "Your leg"): {str1.replace("Life", "Your leg")}')
+print(f"str1: {str1}")
+
+# 문자열 타입이 변경 가능하다고 착각하는 이유
+str1 = str1.replace("Life", "Your leg")
+print(f"str1: {str1}")
