@@ -1,0 +1,10 @@
+{
+    "name": "홍길동",
+    "age": 30,
+    "skills": [
+        "Python",
+        "JavaScript",
+        "SQL"
+    ],
+    "is_active": true
+}

@@ -1,0 +1,1308 @@
+<html class="os_mac" lang="ko"><head><script id="adfitScript" src="//t1.daumcdn.net/kas/static/ba.min.js"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="다음금융" property="og:site_name"/>
+<meta content="https://t1.daumcdn.net/media/finance/images/finance_og_250113.png" property="og:image"/>
+<link href="https://t1.daumcdn.net/top/favicon/20241223/daum.ico" rel="shortcut icon"/>
+<title>국내증시 | 다음 금융</title>
+<link href="https://t1.daumcdn.net/media/kraken/finance/resources/dist/250821161329/commonCSSBundle.merged.css" rel="stylesheet" type="text/css"/>
+<script src="https://t1.daumcdn.net/media/kraken/finance/resources/dist/250821161329/pcFramework.merged.js"></script>
+<script>
+	window.REQUEST_URI = '/domestic';
+	window.CURRENT_URL = encodeURIComponent(
+		"".concat(
+			window.location.protocol,
+			"//",
+			window.location.host,
+			window.location.pathname,
+			window.location.search
+		)
+	);
+
+	window.FINANCE = {};
+	window.FINANCE.API_URL = '';
+	window.FINANCE._PERIOD = '';
+	window.FINANCE.DAUM_NEWS_HOST = 'https://v.daum.net/v';
+	window.FINANCE.BOARD_HOST = 'https://board2.finance.daum.net';
+	window.FINANCE.WISE_FN_HOST = 'https://wisefn.finance.daum.net/v1';
+</script>
+<script src="https://t1.daumcdn.net/tiara/js/v1/tiara.min.js" type="text/javascript"></script>
+<script async="" src="//go.daum.net/minidaum_pc.daum" type="text/javascript"></script><script async="" charset="utf-8" src="https://t1.daumcdn.net/daumtop_deco/scripts/minidaum/pc/minidaum_pc-3a48d3a.min.js" type="text/javascript"></script><style>/* minidaum common */
+#wrapMinidaum{z-index:999999;height:40px;font-size:12px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'돋움',dotum,sans-serif;color:#222;text-align:left}
+#minidaum ol, #minidaum ul, #minidaum li{list-style:none}
+#minidaum img, #minidaum fieldset{border:0;padding:0}
+#minidaum img{vertical-align:top}
+#minidaum p{margin:0;padding:0}
+#minidaum a{font-family:AppleSDGothicNeo-Regular,'돋움',dotum,sans-serif;color:#222;text-decoration:none}
+#minidaum a:active, #minidaum a:hover{text-decoration:underline}
+#minidaum em{font-style:normal}
+#wrapMinidaum .screen_out{display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+#wrapMinidaum .hide{display:none}
+#minidaum{position:absolute;top:0;left:0;width:100%;height:40px;letter-spacing:-1px}
+#minidaum .img_minidaum{display:block;overflow:hidden;font-size:0;line-height:0;background:url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat;text-indent:-9999px}
+#minidaum .minidaum_gnb{float:right;margin-right:-3px;padding-top:8px}
+#minidaum .minidaum_logo{display:inline;float:left;margin:13px 12px 0 0}
+#minidaum .minidaum_logo .img_logo{display:block;overflow:hidden;width:56px;height:14px;}
+#minidaum .minidaum_logo .img_logo .img_daumlogo{display:block;width:56px;height:14px}
+.minidaum_rank_list{background:url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat 0 -200px}
+.minidaum_rank_list .minidaum_word{float:left;white-space:nowrap}
+.minidaum_rank_list .minidaum_num{font-size:12px;line-height:14px;color:#666;letter-spacing:0}
+.minidaum_rank_list .minidaum_status{float:left;overflow:hidden;width:8px;height:10px;font-size:0;background:url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat -100% 0;text-indent:-3000px}
+.minidaum_rank_list .minidaum_up{margin-top:3px;background-position:0 -80px}
+.minidaum_rank_list .minidaum_down{margin-top:2px;background-position:-10px -80px}
+.minidaum_rank_list .minidaum_keep{height:1px;margin-top:5px;background-position:-20px -80px}
+.minidaum_rank_list .minidaum_new{width:25px;margin-top:2px;background-position:-30px -80px}
+.minidaum_rank_list .minidaum_dummy{background:url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat 0 -490px}
+#minidaumRank{float:left;position:relative;margin-top:13px;height:19px}
+#minidaumRank .minidaum_rankroll{overflow:hidden;width:191px;height:19px;font-size:12px;line-height:14px;letter-spacing:-1px}
+#minidaumRank .minidaum_rank_list{float:left;width:191px;background-position:0 -490px}
+#minidaumRank .minidaum_rank_list li{height:23px}
+#minidaumRank .minidaum_rank_list .minidaum_word{padding:1px 6px 0 18px}
+#minidaumRank .minidaum_rank_list .minidaum_num{display:inline;float:left;margin:1px 0 0 2px}
+#minidaumRank .minidaum_rank_list .minidaum_up{margin-top:2px}
+#minidaumRank .minidaum_rank_list .minidaum_down{margin-top:1px}
+#minidaumRank .minidaum_rank_list .minidaum_keep{margin-top:6px}
+#minidaumUser{float:left}
+#minidaumUser .minidaum_profile{display:block;overflow:hidden}
+#minidaumUser .minidaum_login{display:block;width:50px;height:22px;border:1px solid #E4E4E4;font-size:12px;line-height:24px;color:#666;text-align:center}
+#minidaumUser .minidaum_login:hover{text-decoration:none}
+#minidaumUser .minidaum_nick{display:block}
+#minidaumUser .minidaum_nick .minidaum_profile{position:relative;width:24px;height:24px}
+#minidaumService{float:left}
+#minidaumService .dsvc_util{display:inline;float:left;margin-left:24px}
+#minidaumService .minidaum_mail{display:block;position:relative;width:24px;height:24px}
+#minidaumService .minidaum_mail .ico_dsvc_mail{width:24px;height:24px;background-position:0 -20px}
+#minidaumService .minidaum_mail:hover .ico_dsvc_mail{background-position:-60px -20px}
+#minidaumService .ico_dsvc_alarm{position:absolute;top:-1px;right:-3px;width:10px;height:10px;background-position:-90px -80px;pointer-events:none}
+#minidaumService .minidaum_count{display:none;position:absolute;top:-3px;left:12px}
+#minidaumService #minidaumMailCnt{display:block;min-width:15px;width:auto;height:auto;padding:3px 2px 1px 1px;border-radius:8px;font-style:normal;font-weight:600;font-size:11px;line-height:10px;color:#fff;background-color:#118EFF;text-align:center;letter-spacing:0;text-decoration:none}
+#minidaumService #minidaumMailCnt.mailcnt2{min-width:21px;padding-right:1px;padding-left:2px}
+#minidaumService #minidaumMailCnt:empty{display:none}
+#minidaumService .minidaum_dormant{display:none;position:absolute;top:-3px;left:11px;min-width:29px;width:auto;height:auto;padding:3px 4px 1px 4px;border-radius:8px;font-style:normal;font-weight:400;font-size:11px;line-height:10px;color:#fff;background-color:#2C2E33;text-align:center;letter-spacing:0;box-sizing:border-box;text-decoration:none;word-break:keep-all}
+#minidaumService .minidaum_sitemap{display:block;width:24px;height:24px}
+#minidaumService .ico_dsvc_sitemap{width:24px;height:24px;background-position:-30px -20px}
+#minidaumService .minidaum_sitemap:hover .ico_dsvc_sitemap:hover{background-position:-90px -20px}
+
+#minidaum .minidaum_layer{display:none;position:absolute;top:34px;padding-top:5px}
+#minidaum .minidaum_layer .ico_arrow{position:absolute;top:0;width:10px;height:6px;background-position:-60px -80px}
+#minidaum .inner_minidaum_layer{overflow:hidden;border:1px solid #CDCDCD;border-radius:1px;background-color:#fff}
+#minidaum .minidaumlayer_open{display:block}
+#minidaumRankLayer{left:0;width:222px}
+#minidaumRankLayer .ico_arrow{left:57px}
+#minidaumRankLayer .inner_minidaum_layer{height:342px;padding:0 20px 0 19px}
+#minidaumRankLayer .minidaum_rank_tit{display:block;height:30px;margin:20px 0 0 2px;font-weight:bold;font-size:14px}
+#minidaumRankLayer li{overflow:hidden;height:23px;margin-top:5px;font-size:13px;line-height:14px}
+#minidaumRankLayer .minidaum_word{width:133px;padding:1px 0 0 18px}
+#minidaumRankLayer .minidaum_dummy{display:none}
+#minidaumRankLayer .minidaum_num{float:right;width:21px;margin-top:2px;text-align:right}
+#minidaumRankLayer .minidaum_select .minidaum_word{font-weight:bold;letter-spacing:-1px}
+#minidaumRankLayer .minidaum_keep{display:inline;float:right;margin:8px 1px 0 0}
+#minidaumRankLayer .minidaum_new{float:right;margin-top:2px}
+#minidaumMoreLayer{right:0;width:312px}
+#minidaumMoreLayer .ico_arrow{right:4px}
+#minidaumMoreLayer .minidaum_idx{display:none}
+#minidaumMoreLayer .minidaum_list_dsvc{overflow:hidden;padding:23px 0 0 2px}
+#minidaumMoreLayer .minidaum_list_dsvc li{float:left;width:74px;height:74px;margin-right:1px;text-align:center}
+#minidaumMoreLayer .minidaum_list_dsvc a{display:block}
+#minidaumMoreLayer .minidaum_list_dsvc img{vertical-align:top}
+#minidaumMoreLayer .dsvc_thumb{display:block;overflow:hidden;width:36px;height:36px;margin:0 auto}
+#minidaumMoreLayer .dsvc_txt{display:block;margin-top:6px;font-weight:bold;font-size:13px}
+#minidaumMoreLayer .minidaum_listbox{display:table;overflow:hidden;position:relative;width:100%;padding:18px 0 58px;border-top:1px solid #F2F2F2}
+#minidaumMoreLayer .minidaum_list_group{display:table-cell;width:72px;border-left:1px solid #F2F2F2}
+#minidaumMoreLayer .minidaum_list_group li{margin-bottom:-2px;padding:13px 0 0 10px;font-size:13px;line-height:15px}
+#minidaumMoreLayer .minidaum_list_group li:first-child{padding-top:0}
+#minidaumMoreLayer .minidaum_list_group .minidaum_all{position:absolute;left:0;bottom:0;width:100%;margin:0;padding:14px 0 11px;border-top:1px solid #F2F2F2;font-size:12px;line-height:14px;color:#222;background-color:#FBFBFB;text-align:center;text-decoration:none}
+#minidaumMoreLayer .minidaum_list_group1{width:69px;padding-left:12px;border-left:0 none}
+#minidaumMoreLayer .minidaum_list_group4{width:auto}
+#minidaumMailLayer{right:0;width:312px}
+#minidaumMailLayer .ico_arrow{right:52px}
+#minidaumMailLayer .inner_minidaum_layer{height:238px;text-align:center}
+#minidaumMailLayer .ico_dsvc_notify{width:70px;height:64px;margin:37px auto 0;padding-left:10px;background-position:10px -130px}
+#minidaumMailLayer .minidaum_notify{margin:11px 0 17px;font-size:13px;line-height:22px;color:#666}
+#minidaumMailLayer .minidaum_notify em{font-size:14px;color:#222}
+#minidaumMailLayer .minidaum_account{display:block;width:138px;margin:0 auto;padding:10px 0 8px;border:1px solid #CDCDCD;border-radius:2px;line-height:1;color:#666;text-align:center;text-decoration:none}
+#minidaumUserLayer{right:0}
+#minidaumUserLayer .ico_arrow{right:100px}
+#minidaumUserLayer .inner_minidaum_layer{width:310px;height:138px}
+#minidaumUserLayer .minidaum_mysvc{overflow:hidden;border-top:1px solid #eee;background-color:#FBFBFB}
+#minidaumUserLayer .minidaum_mysvc li{float:left;width:50%;padding:12px 0 11px;line-height:13px;text-align:center}
+#minidaumUserLayer .minidaum_mysvc li:before{float:left;width:1px;height:13px;margin-left:-1px;background-color:#eee;content:''}
+#minidaumUserLayer .minidaum_logout{position:absolute;top:73px;left:103px;color:#888;text-decoration:underline;letter-spacing:-1px}
+#minidaumUserLayer .minidaum_myinfo{height:84px;padding:17px 0 0 20px}
+#minidaumUserLayer .minidaum_myprof{float:left;position:relative;max-width:190px;margin-top:3px;padding-left:82px;vertical-align:top}
+#minidaumUserLayer .minidaum_ssoing .minidaum_myprof{max-width:122px}
+#minidaumUserLayer .minidaum_profile{position:absolute;top:-1px;left:1px;width:66px;height:66px}
+#minidaumUserLayer .minidaum_user{display:block;overflow:hidden;padding-right:1px;font-weight:bold;font-size:15px;line-height:19px;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis}
+#minidaumUserLayer .minidaum_account{overflow:hidden;position:absolute;top:25px;left:82px;max-width:204px;font-size:13px;line-height:15px;color:#666;letter-spacing:0;white-space:nowrap;text-overflow:ellipsis}
+#minidaumUserLayer .minidaum_sso{display:inline-block;width:70px;height:22px;margin-left:5px;background-position:0 -100px;vertical-align:top}
+#minidaumUserLayer .minidaum_kakaoid{position:absolute;top:44px;left:46px;width:24px;height:24px;background-position:-80px -100px}
+
+/* 플래시가 미니다음 레이어들을 가릴 때 */
+#minidaum .minidaum_shield{position:absolute;top:0;left:0;z-index:-1}
+#minidaum .minidaumlayer_open .minidaum_shield{border:1px solid #fff}
+
+/* 레티나 대응 이미지 */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+only screen and (min-resolution: 1.5dppx){
+    #minidaum .img_minidaum,.minidaum_rank_list,.minidaum_rank_list .minidaum_dummy,.minidaum_rank_list .minidaum_status{background-image: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/rtn/minidaum_v5.png);background-size: 120px 960px}
+}</style></head>
+<body class="finance">
+<div id="wrap">
+<div id="kakaoWrap">
+<div id="wrapMinidaum"><div id="minidaum"><strong class="minidaum_logo"><a class="img_logo minidaum_tiara_click" data-tiara-action-name="미니다음_로고" data-tiara-layer="minidaum logo" href="https://www.daum.net/?nil_profile=mini&amp;nil_src=daum" target="_top"><span class="screen_out">Daum</span> <div aria-hidden="true" class="img_daumlogo"> <svg fill="none" height="14" viewbox="0 0 56 14" width="56" xmlns="http://www.w3.org/2000/svg"> <path d="M6.65329 4.11276C8.17796 4.11276 9.41131 5.44009 9.35258 6.97768C9.29738 8.44009 8.04992 9.63351 6.58633 9.63351H4.65525C4.52604 9.63351 4.42032 9.5278 4.42032 9.39859V4.34769C4.42032 4.21848 4.52604 4.11276 4.65525 4.11276H6.65211M6.65329 1H1.95478C1.56597 1 1.25 1.31597 1.25 1.70478V12.0415C1.25 12.4303 1.56597 12.7463 1.95478 12.7463H6.65329C9.89644 12.7463 12.5264 10.1163 12.5264 6.87314C12.5264 3.62999 9.89644 1 6.65329 1Z" fill="#273552"></path> <path d="M54.5756 5.79247C54.5756 2.95223 52.4754 1 49.9735 1C48.5616 1 47.7945 1.52388 47.0346 2.1805C46.9476 2.25568 46.8184 2.25568 46.7303 2.1805C45.9609 1.52388 45.1352 1 43.8407 1C41.2319 1 39.188 3.13899 39.188 5.79247V11.8066C39.188 12.1954 39.504 12.5113 39.8928 12.5113H41.6548C42.0436 12.5113 42.3595 12.1954 42.3595 11.8066V5.53288C42.3595 4.77525 42.9562 4.0552 43.8278 4.0552C44.6266 4.0552 45.2961 4.69655 45.2961 5.53288V11.8066C45.2961 12.1954 45.6121 12.5113 46.0009 12.5113H47.7628C48.1516 12.5113 48.4676 12.1954 48.4676 11.8066V5.53288C48.4676 4.77055 49.0643 4.05403 49.9359 4.05403C50.7123 4.05403 51.4042 4.64369 51.4042 5.53288V11.8066C51.4042 12.1954 51.7201 12.5113 52.1089 12.5113H53.8709C54.2597 12.5113 54.5756 12.1954 54.5756 11.8066V5.79247Z" fill="#273552"></path> <path d="M25.2125 7.33709C25.2125 2.55753 21.557 0.95064 19.3393 1.00115C15.974 1.07867 13.586 3.59943 13.4709 6.64406C13.344 9.99175 16.0198 12.7463 19.3393 12.7463C20.366 12.7463 21.3315 12.4831 22.1714 12.0192C22.3147 11.9405 22.4885 11.9428 22.6306 12.0239L24.1565 12.9037C24.6263 13.175 25.2136 12.8355 25.2136 12.2928V7.33474L25.2125 7.33709ZM16.6377 6.87311C16.6377 5.32378 17.669 4.11274 19.3393 4.11274C21.0096 4.11274 22.041 5.28619 22.041 6.87311C22.041 8.37664 21.0343 9.63349 19.3393 9.63349C17.6443 9.63349 16.6377 8.38486 16.6377 6.87311Z" fill="#273552"></path> <path d="M36.9599 1.46991H35.198C34.8092 1.46991 34.4932 1.78588 34.4932 2.17469V7.5768C34.4932 8.87242 33.4396 9.92723 32.1428 9.92723C30.846 9.92723 29.7923 8.87359 29.7923 7.5768V2.17469C29.7923 1.78588 29.4764 1.46991 29.0876 1.46991H27.3256C26.9368 1.46991 26.6208 1.78588 26.6208 2.17469V7.45934C26.6208 10.504 29.0981 12.9813 32.1428 12.9813C35.1874 12.9813 37.6647 10.504 37.6647 7.45934V2.17469C37.6647 1.78588 37.3487 1.46991 36.9599 1.46991Z" fill="#273552"></path> </svg> </div></a></strong><div class="minidaum_gnb"><h2 class="screen_out">서비스 바로가기</h2><div id="minidaumUser"><a class="minidaum_login minidaum_tiara_click" data-tiara-action-name="미니다음_로고" data-tiara-layer="minidaum login" href="https://logins.daum.net/accounts/loginform.do?url=https%3A%2F%2Ffinance.daum.net%2Fdomestic" id="btnMinidaumLogin" target="_top">로그인</a></div><div id="minidaumService"><div class="dsvc_util"><a class="minidaum_mail minidaum_tiara_click" data-tiara-action-name="미니다음_메일" data-tiara-layer="minidaum mail" href="https://mail.daum.net/?nil_profile=mini&amp;nil_src=mail" id="minidaumMail"><span class="img_minidaum ico_dsvc_mail">메일</span><em class="minidaum_count" id="minidaumMailCntWrapper"><span class="screen_out">받은메일수</span><span id="minidaumMailCnt"></span></em></a><div class="minidaum_layer" id="minidaumMailLayer"><span class="img_minidaum ico_arrow"></span><div class="inner_minidaum_layer"><span class="img_minidaum ico_dsvc_notify"></span><p class="minidaum_notify"><em>메일함이 없습니다</em><br/>메일함 생성을 위해선 Daum아이디가 필요합니다</p><a class="minidaum_account" href="https://accounts.daum.net/mail/create">Daum아이디 만들기</a></div></div></div><div class="dsvc_util"><a aria-expanded="false" class="minidaum_sitemap" href="http://www.daum.net/doc/sitemap/?nil_profile=mini&amp;nil_src=sitemap" id="minidaumMore" role="button" target="_top"><span class="img_minidaum ico_dsvc_sitemap">Daum 미니 사이트맵</span></a><div class="minidaum_layer" id="minidaumMoreLayer"><span class="img_minidaum ico_arrow"></span><div class="inner_minidaum_layer"><strong class="screen_out">주요서비스 바로가기</strong><ul class="minidaum_list_dsvc"><li><a class="minidaum_tiara_click" data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer cafe" href="https://cafe.daum.net/?nil_profile=mini&amp;nil_src=cafe" target="_top"><span class="dsvc_thumb"><img alt="" height="36" src="//t1.daumcdn.net/daumtop_deco/images/common/minidaum/rtn/ic_cafe.png" width="36"/></span><span class="dsvc_txt">카페</span></a></li><li><a class="minidaum_tiara_click" data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer news" href="https://news.daum.net/?nil_profile=mini&amp;nil_src=news" target="_top"><img alt="" height="36" src="//t1.daumcdn.net/daumtop_deco/images/common/minidaum/rtn/ic_news.png" width="36"/><span class="dsvc_txt">뉴스</span></a></li><li><a class="minidaum_tiara_click" data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer map" href="https://map.kakao.com/?nil_profile=mini&amp;nil_src=map"><span class="dsvc_thumb"><img alt="" height="36" src="//t1.daumcdn.net/daumtop_deco/images/common/minidaum/rtn/ic_map.png" width="36"/></span><span class="dsvc_txt">지도</span></a></li><li><a class="minidaum_tiara_click" data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer shopping" href="https://shoppinghow.kakao.com/top?nil_profile=mini&amp;nil_src=shophow"><span class="dsvc_thumb"><img alt="" height="36" src="//t1.daumcdn.net/daumtop_deco/images/common/minidaum/rtn/ic_shopping.png" width="36"/></span><span class="dsvc_txt">쇼핑</span></a></li></ul><div class="minidaum_listbox"><strong class="screen_out">서비스 바로가기</strong><strong class="minidaum_idx minidaum_idx1">더보기 1열</strong><ul class="minidaum_list_group minidaum_list_group1"><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer tistory" href="https://www.tistory.com/?nil_profile=mini&amp;nil_src=tistory" target="_top">티스토리</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer brunch" href="https://brunch.co.kr/?nil_profile=mini&amp;nil_src=brunch" target="_top">브런치</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer kakaotv" href="https://tv.kakao.com/?nil_profile=mini&amp;nil_src=kakaotv" target="_top">카카오TV</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer game" href="https://game.daum.net/?nil_profile=mini&amp;nil_src=game" target="_top">게임</a></li></ul><strong class="minidaum_idx minidaum_idx2">더보기 2열</strong><ul class="minidaum_list_group minidaum_list_group2"><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer sports" href="https://sports.daum.net/?nil_profile=mini&amp;nil_src=sports" target="_top">스포츠</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer entertain" href="https://entertain.daum.net/?nil_profile=mini&amp;nil_src=entertain" target="_top">연예</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer webtoon" href="https://webtoon.kakao.com/?nil_profile=mini&amp;nil_src=webtoon" target="_top">웹툰</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer melon" href="https://www.melon.com/?nil_profile=mini&amp;nil_src=melon" target="_top">멜론</a></li></ul><strong class="minidaum_idx minidaum_idx3">더보기 3열</strong><ul class="minidaum_list_group minidaum_list_group3"><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer dic" href="https://dic.daum.net/?nil_profile=mini&amp;nil_src=dic" target="_top">어학사전</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer translate" href="https://translate.kakao.com/" target="_top">번역</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer grammar_checker" href="https://dic.daum.net/grammar_checker.do" target="_top">맞춤법검사</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer 100" href="https://100.daum.net/" target="_top">백과사전</a></li></ul><strong class="minidaum_idx minidaum_idx4">더보기 4열</strong><ul class="minidaum_list_group minidaum_list_group4"><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer finance" href="https://finance.daum.net/" target="_top">금융</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer makers" href="https://makers.kakao.com/" target="_top">메이커스</a></li><li><a data-tiara-action-name="미니다음_서비스 보기 레이어_서비스명 클릭" data-tiara-layer="minidaum site_layer together" href="https://together.kakao.com/?nil_profile=mini&amp;nil_src=together" target="_top">같이가치</a></li><li class="last minidaum_all"><a data-tiara-action-name="미니다음_서비스 보기 레이어_전체보기 클릭" data-tiara-layer="minidaum site_layer sitemap" href="https://www.daum.net/doc/sitemap/?nil_profile=mini&amp;nil_src=all" target="_top">전체보기</a></li></ul></div></div></div></div></div></div></div></div>
+</div>
+<script src="https://t1.daumcdn.net/media/kraken/finance/resources/dist/250821161329/miniDaum.merged.js"></script>
+<div class="header">
+<div class="head_media f_clear">
+<h1><a class="#gnb #default #service_finance" href="/" id="kakaoServiceLogo"><span class="ir_wa">금융</span></a></h1>
+<strong class="screen_out">관련서비스</strong>
+<h2 class="screen_out">검색</h2>
+<div class="search_news" id="boxSearch"><form action="/quotes">
+<fieldset>
+<legend class="screen_out">검색어 입력폼</legend>
+<div class="box_searchbar" id="boxSearchbar">
+<label class="lab_search" for="">종목명, 종목코드를 입력해주세요</label>
+<input autocomplete="off" class="tf_keyword" id="inpSearchStock" maxlength="30" type="text" value=""/>
+<button class="btn_search" id="btnSearchStock"><span class="ir_wa">검색</span></button><span class="layerB" style="display: none"></span>
+<!-- NOTE: 검색 제안창이 addon 됩니다. -->
+<!-- <span class="layerB" id="boxAutoComplete" ></span> -->
+</div>
+</fieldset>
+</form>
+</div>
+<script src="https://t1.daumcdn.net/media/kraken/finance/resources/dist/250821161329/searchBundle.merged.js"></script>
+</div>
+<div id="kakaoGnb" role="navigation">
+<div class="inner_gnb">
+<h2 class="screen_out">금융 메인메뉴</h2>
+<ul class="gnb_comm">
+<li class="">
+<a class="link_gnb link_gnb1" href="/">
+<span class="screen_out">선택됨</span>
+<span class="ir_wa">홈</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+<li class="on">
+<a class="link_gnb link_gnb2" href="/domestic">
+<span class="ir_wa">국내</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+<li class="">
+<a class="link_gnb link_gnb3" href="/global">
+<span class="ir_wa">해외</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+<li class="">
+<a class="link_gnb link_gnb4" href="/news">
+<span class="ir_wa">뉴스</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+<li class="">
+<a class="link_gnb link_gnb5" href="/investment">
+<span class="ir_wa">투자정보</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+<li class="">
+<a class="link_gnb link_gnb6" href="/talks">
+<span class="ir_wa">종목토론</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+<li class="">
+<a class="link_gnb link_gnb8" href="/my">
+<span class="ir_wa">MY</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+</ul>
+<div class="gnb_etc">
+<ul class="gnb_with">
+<li class="">
+<a class="link_gnb link_gnb1" href="/exchanges">
+<span class="ir_wa">환율</span>
+<span class="bar_gnb"><span class="inner_bar"></span></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="notice"></div>
+<div class="contents">
+<div class="SNB" id="boxSidebar"><h3><a href="/domestic" title="국내증시">국내증시</a></h3>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="주요시세정보">주요시세정보</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/kospi" title="코스피">코스피</a>
+<a class="" href="/domestic/kosdaq" title="코스닥">코스닥</a>
+</li>
+<li>
+<a class="" href="/domestic/kospi200" title="코스피200">코스피200</a>
+<a class="" href="/domestic/etf" title="ETF">ETF</a>
+</li>
+<li>
+<a class="" href="/domestic/futures" title="선물">선물</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="업종별 시세">업종별 시세</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/wics" title="WICS">WICS</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="종목랭킹 검색">종목랭킹 검색</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/market_cap" title="시가총액별">시가총액별</a>
+</li>
+<li>
+<a class="" href="/domestic/volume" title="거래량별">거래량별</a>
+</li>
+<li>
+<a class="" href="/domestic/rise_stocks" title="상승률">상승률</a>
+<a class="" href="/domestic/fall_stocks" title="하락률">하락률</a>
+</li>
+<li>
+<a class="" href="/domestic/after_hours" title="시간외 단일가">시간외 단일가</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="거래원별 종목랭킹">거래원별 종목랭킹</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/influential_investors" title="외국인/기관매매">외국인/기관매매</a>
+</li>
+<li>
+<a class="" href="/domestic/foreign_shares" title="외국인 보유율 상위">외국인 보유율 상위</a>
+</li>
+<li>
+<a class="" href="/domestic/investors" title="투자주체별 동향">투자주체별 동향</a>
+</li>
+<li>
+<a class="" href="/domestic/arounds" title="증시주변자금동향">증시주변자금동향</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="시장감시">시장감시</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/managements" title="관리종목">관리종목</a>
+</li>
+<li>
+<a class="" href="/domestic/trading_halts" title="거래정지">거래정지</a>
+</li>
+<li>
+<a class="" href="/domestic/investment_alerts" title="시장경보">시장경보</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="이슈">이슈</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/calendar" title="증시 캘린더">증시 캘린더</a>
+</li>
+<li>
+<a class="" href="/domestic/new_listings" title="신규상장">신규상장</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="기타">기타</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/exchange" title="환율/원자재/금리">환율/원자재/금리</a>
+</li>
+</ul>
+</span>
+<span>
+<h4><a class="nolink" href="javascript:void(0)" title="한번에 보기">한번에 보기</a></h4>
+<ul>
+<li>
+<a class="" href="/domestic/all_stocks" title="전종목 시세">전종목 시세</a>
+</li>
+<li>
+<a class="" href="/domestic/chart" title="종합 차트 검색">종합 차트 검색</a>
+</li>
+<li>
+<a class="" href="/domestic/chart_slides" title="차트 슬라이드">차트 슬라이드</a>
+</li>
+</ul>
+</span>
+</div>
+<div class="inner" id="boxApp">
+<div class="topBox" id="boxDashboard"><ul class="tab box_tabs"><li class="up"><a class="on" href="javascript:void(0)">
+<h4>코스피</h4>
+<span>
+<strong>3,159.50</strong>
+<p><i>▲</i>16.57</p>
+<p>+0.53%</p>
+</span>
+</a>
+</li><li class="up"><a class="off" href="javascript:void(0)">
+<h4>코스닥</h4>
+<span>
+<strong>787.99</strong>
+<p><i>▲</i>2.99</p>
+<p>+0.38%</p>
+</span>
+</a>
+</li><li class="up"><a class="" href="javascript:void(0)">
+<h4>코스피 200</h4>
+<span>
+<strong>426.36</strong>
+<p><i>▲</i>3.03</p>
+<p>+0.72%</p>
+</span>
+</a>
+</li></ul>
+<div class="box box_contents"><div style="display: block;"><div class="box">
+<div class="graphB">
+<div class="f_clear">
+<dl>
+<dt>연초</dt>
+<dd>2,398.94</dd>
+<dt>지난주</dt>
+<dd>3,179.36</dd>
+</dl>
+<p class="time">10:05 실시간</p>
+</div>
+<div class="graph">
+<a href="/domestic/kospi"><img alt="530x160" src="https://t1.daumcdn.net/media/finance/chart/kr/daumcomplexindex/d/KGG01P.png?t=202509021005" width="530"/></a>
+</div>
+</div>
+<div class="txtB">
+<dl>
+<dt>등락종목</dt>
+<dd class="ty01 mr"><a href="/domestic/rise_stocks?market=KOSPI&amp;change=UPPER_LIMIT">상한가<p class="up"><i>↑</i>0</p></a></dd>
+<dd class="ty01"><a href="/domestic/fall_stocks?market=KOSPI&amp;change=LOWER_LIMIT">하한가<p class="down"><i>↓</i>0</p></a></dd>
+<dd class="ty02 mr"><a href="/domestic/rise_stocks?market=KOSPI">상승<p class="up"><i>▲</i>373</p></a></dd>
+<dd class="ty02"><a href="/domestic/fall_stocks?market=KOSPI">하락<p class="down"><i>▼</i>469</p></a></dd>
+</dl>
+<dl>
+<dt>투자자별 매매동향</dt>
+<dd class="mr"><a href="/domestic/investors/KOSPI">외국인<p class="up">+692<em>억</em></p></a></dd>
+<dd><a href="/domestic/investors/KOSPI">개인<p class="down">-735<em>억</em></p></a></dd>
+<dd class="mr"><a href="/domestic/investors/KOSPI">기관<p class="down">-97<em>억</em></p></a></dd>
+<dd><a class="nolink" href="javascript:void(0)">프로그램<p class="up">+513<em>억</em></p></a></dd>
+</dl>
+</div>
+</div>
+</div><div style="display: none;"><div class="box">
+<div class="graphB">
+<div class="f_clear">
+<dl>
+<dt>연초</dt>
+<dd>686.63</dd>
+<dt>지난주</dt>
+<dd>801.66</dd>
+</dl>
+<p class="time">10:05 실시간</p>
+</div>
+<div class="graph">
+<a href="/domestic/kosdaq"><img alt="530x160" src="https://t1.daumcdn.net/media/finance/chart/kr/daumcomplexindex/d/QGG01P.png?t=202509021005" width="530"/></a>
+</div>
+</div>
+<div class="txtB">
+<dl>
+<dt>등락종목</dt>
+<dd class="ty01 mr"><a href="/domestic/rise_stocks?market=KOSDAQ&amp;change=UPPER_LIMIT">상한가<p class="up"><i>↑</i>1</p></a></dd>
+<dd class="ty01"><a href="/domestic/fall_stocks?market=KOSDAQ&amp;change=LOWER_LIMIT">하한가<p class="down"><i>↓</i>0</p></a></dd>
+<dd class="ty02 mr"><a href="/domestic/rise_stocks?market=KOSDAQ">상승<p class="up"><i>▲</i>866</p></a></dd>
+<dd class="ty02"><a href="/domestic/fall_stocks?market=KOSDAQ">하락<p class="down"><i>▼</i>708</p></a></dd>
+</dl>
+<dl>
+<dt>투자자별 매매동향</dt>
+<dd class="mr"><a href="/domestic/investors/KOSDAQ">외국인<p class="down">-94<em>억</em></p></a></dd>
+<dd><a href="/domestic/investors/KOSDAQ">개인<p class="up">+141<em>억</em></p></a></dd>
+<dd class="mr"><a href="/domestic/investors/KOSDAQ">기관<p class="up">+35<em>억</em></p></a></dd>
+<dd><a class="nolink" href="javascript:void(0)">프로그램<p class="up">+14<em>억</em></p></a></dd>
+</dl>
+</div>
+</div>
+</div><div style="display: none;"><div class="box">
+<div class="graphB">
+<div class="f_clear">
+<dl>
+<dt>연초</dt>
+<dd>317.77</dd>
+<dt>지난주</dt>
+<dd>429.41</dd>
+</dl>
+<p class="time">10:05 실시간</p>
+</div>
+<div class="graph">
+<a href="/domestic/kospi200"><img alt="530x160" src="https://t1.daumcdn.net/media/finance/chart/kr/daumcomplexindex/d/K2G01P.png?t=202509021005" width="530"/></a>
+</div>
+</div>
+<div class="txtB">
+<dl>
+<dt>등락종목</dt>
+<dd class="ty01 mr"><a href="/domestic/rise_stocks?market=KOSPI&amp;change=UPPER_LIMIT">상한가<p class="up"><i>↑</i>0</p></a></dd>
+<dd class="ty01"><a href="/domestic/fall_stocks?market=KOSPI&amp;change=LOWER_LIMIT">하한가<p class="down"><i>↓</i>0</p></a></dd>
+<dd class="ty02 mr"><a href="/domestic/rise_stocks?market=KOSPI">상승<p class="up"><i>▲</i>86</p></a></dd>
+<dd class="ty02"><a href="/domestic/fall_stocks?market=KOSPI">하락<p class="down"><i>▼</i>115</p></a></dd>
+</dl>
+<dl>
+<dt>투자자별 매매동향</dt>
+<dd class="mr"><a href="/domestic/investors/KOSPI">외국인<p class="up">+1,056<em>억</em></p></a></dd>
+<dd><a href="/domestic/investors/KOSPI">개인<p class="down">-1,244<em>억</em></p></a></dd>
+<dd class="mr"><a href="/domestic/investors/KOSPI">기관<p class="up">+17<em>억</em></p></a></dd>
+</dl>
+</div>
+</div>
+</div></div>
+</div>
+<div class="leftW">
+<div class="tableB half mr" id="boxSectorsPriceChange"><div class="tab">
+<ul class="box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="등락률 상위업종">등락률 상위업종</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="등락률 하위업종">등락률 하위업종</a>
+</li></ul>
+<a class="btnMore" href="/domestic/wics" title="더보기">더보기</a>
+</div>
+<div class="box_contents"><div style="display: block;"><table>
+<colgroup>
+<col width="*"/>
+<col width="70"/>
+<col width="*"/>
+<col width="70"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="4">
+<div class="wicsTd f_clear">
+<span class="txtL">WICS</span>
+<span class="txtR txtOffer">
+<i>i</i><span class="txt">제공 : 에프엔가이드</span>
+</span>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first">
+<th><a class="txt" href="/domestic/wics/G252070">문구류</a></th>
+<td class="pR rt-G252070-change-ratio"><span class="num up">+6.55%</span></td>
+<th class="pL"><a class="txt" href="/domestic/wics/G201070">무역회사와판매업체</a></th>
+<td class="rt-G201070-change-ratio"><span class="num up">+1.66%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/domestic/wics/G352030">생명과학도구및서비스</a></th>
+<td class="pR rt-G352030-change-ratio"><span class="num up">+3.96%</span></td>
+<th class="pL"><a class="txt" href="/domestic/wics/G201060">기계</a></th>
+<td class="rt-G201060-change-ratio"><span class="num up">+1.54%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/domestic/wics/G351030">건강관리기술</a></th>
+<td class="pR rt-G351030-change-ratio"><span class="num up">+3.61%</span></td>
+<th class="pL"><a class="txt" href="/domestic/wics/G203010">항공화물운송과물류</a></th>
+<td class="rt-G203010-change-ratio"><span class="num up">+1.53%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/domestic/wics/G201010">우주항공과국방</a></th>
+<td class="pR rt-G201010-change-ratio"><span class="num up">+2.63%</span></td>
+<th class="pL"><a class="txt" href="/domestic/wics/G453010">반도체와반도체장비</a></th>
+<td class="rt-G453010-change-ratio"><span class="num up">+1.51%</span></td>
+</tr>
+<tr class="last">
+<th><a class="txt" href="/domestic/wics/G404020">생명보험</a></th>
+<td class="pR rt-G404020-change-ratio"><span class="num up">+2.23%</span></td>
+<th class="pL"><a class="txt" href="/domestic/wics/G201065">조선</a></th>
+<td class="rt-G201065-change-ratio"><span class="num up">+1.45%</span></td>
+</tr>
+</tbody>
+</table>
+</div><div style="display: none;"></div></div>
+</div>
+<div class="tableB half" id="boxUpDownItems"><div class="tab">
+<ul class="box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="상승종목">상승종목</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="하락종목">하락종목</a>
+</li></ul>
+<a class="btnMore" href="/domestic/rise_stocks" title="더보기">더보기</a>
+</div>
+<div class="box_contents"><div style="display: block;"><table>
+<colgroup>
+<col width="*"/>
+<col width="70"/>
+<col width="*"/>
+<col width="70"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">코스피</th>
+<th colspan="2">코스닥</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first">
+<th><a class="txt" href="/quotes/A097230">HJ중공업</a></th>
+<td class="pR rt-KR7097230007-change-ratio"><span class="num up">+14.35%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A319400">현대무벡스</a></th>
+<td class="rt-KR7319400008-change-ratio"><span class="num up1">+29.97%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A272210">한화시스템</a></th>
+<td class="pR rt-KR7272210006-change-ratio"><span class="num up">+7.44%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A226950">올릭스</a></th>
+<td class="rt-KR7226950004-change-ratio"><span class="num up">+26.87%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A005360">모나미</a></th>
+<td class="pR rt-KR7005360003-change-ratio"><span class="num up">+7.19%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A199550">레이저옵텍</a></th>
+<td class="rt-KR7199550005-change-ratio"><span class="num up">+22.05%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/Q550092">N2 월간 레버리지 방위산업 Top5 ETN</a></th>
+<td class="pR rt-KRG550000928-change-ratio"><span class="num up">+6.18%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A031860">디에이치엑스컴퍼니</a></th>
+<td class="rt-KR7031860000-change-ratio"><span class="num up">+20.56%</span></td>
+</tr>
+<tr class="last">
+<th><a class="txt" href="/quotes/Q510029">대신 S&amp;P 인버스 2X 천연가스 선물 ETN</a></th>
+<td class="pR rt-KRG510000299-change-ratio"><span class="num up">+6.01%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A217500">러셀</a></th>
+<td class="rt-KR7217500008-change-ratio"><span class="num up">+19.85%</span></td>
+</tr>
+</tbody>
+</table>
+</div><div style="display: none;"></div></div>
+</div>
+<div class="tableB half mr mb" id="boxForeignNetFlow"><div class="tab">
+<ul class="box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="외국인 순매수">외국인 순매수</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="외국인 순매도">외국인 순매도</a>
+</li></ul>
+<a class="btnMore" href="/domestic/influential_investors" title="더보기">더보기</a>
+</div>
+<div class="box_contents"><div style="display: block;"><table>
+<colgroup>
+<col width="*"/>
+<col width="70"/>
+<col width="*"/>
+<col width="70"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">코스피</th>
+<th colspan="2">코스닥</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first">
+<th><a class="txt" href="/quotes/A042660">한화오션</a></th>
+<td class="pR rt-KR7042660001-change-ratio"><span class="num up">+4.98%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A083650">비에이치아이</a></th>
+<td class="rt-KR7083650002-change-ratio"><span class="num down">-0.64%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A012450">한화에어로스페이스</a></th>
+<td class="pR rt-KR7012450003-change-ratio"><span class="num up">+1.64%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A039030">이오테크닉스</a></th>
+<td class="rt-KR7039030002-change-ratio"><span class="num down">-1.17%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A012330">현대모비스</a></th>
+<td class="pR rt-KR7012330007-change-ratio"><span class="num down">-0.16%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A089030">테크윙</a></th>
+<td class="rt-KR7089030001-change-ratio"><span class="num down">-1.26%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A035720">카카오</a></th>
+<td class="pR rt-KR7035720002-change-ratio"><span class="num down">-4.74%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A441270">파인엠텍</a></th>
+<td class="rt-KR7441270006-change-ratio"><span class="num down">-2.37%</span></td>
+</tr>
+<tr class="last">
+<th><a class="txt" href="/quotes/A252670">KODEX 200선물인버스2X</a></th>
+<td class="pR rt-KR7252670005-change-ratio"><span class="num down">-1.26%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A087010">펩트론</a></th>
+<td class="rt-KR7087010005-change-ratio"><span class="num up">+1.00%</span></td>
+</tr>
+</tbody>
+</table>
+</div><div style="display: none;"></div></div>
+</div>
+<div class="tableB half mb" id="boxInstitutionNetFlow"><div class="tab">
+<ul class="box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="기관 순매수">기관 순매수</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="기관 순매도">기관 순매도</a>
+</li></ul>
+<a class="btnMore" href="/domestic/influential_investors?investorType=institution" title="더보기">더보기</a>
+</div>
+<div class="box_contents"><div style="display: block;"><table>
+<colgroup>
+<col width="*"/>
+<col width="70"/>
+<col width="*"/>
+<col width="70"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">코스피</th>
+<th colspan="2">코스닥</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first">
+<th><a class="txt" href="/quotes/A252670">KODEX 200선물인버스2X</a></th>
+<td class="pR rt-KR7252670005-change-ratio"><span class="num down">-1.26%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A196170">알테오젠</a></th>
+<td class="rt-KR7196170005-change-ratio"><span class="num up">+1.10%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A042660">한화오션</a></th>
+<td class="pR rt-KR7042660001-change-ratio"><span class="num up">+4.90%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A089030">테크윙</a></th>
+<td class="rt-KR7089030001-change-ratio"><span class="num down">-1.26%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A009540">HD한국조선해양</a></th>
+<td class="pR rt-KR7009540006-change-ratio"><span class="num up">+0.48%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A298380">에이비엘바이오</a></th>
+<td class="rt-KR7298380007-change-ratio"><span class="num up">+0.44%</span></td>
+</tr>
+<tr class="">
+<th><a class="txt" href="/quotes/A459580">KODEX CD금리액티브(합성)</a></th>
+<td class="pR rt-KR7459580007-change-ratio"><span class="num up">+0.01%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A145020">휴젤</a></th>
+<td class="rt-KR7145020004-change-ratio"><span class="num up">+0.76%</span></td>
+</tr>
+<tr class="last">
+<th><a class="txt" href="/quotes/A012450">한화에어로스페이스</a></th>
+<td class="pR rt-KR7012450003-change-ratio"><span class="num up">+1.75%</span></td>
+<th class="pL"><a class="txt" href="/quotes/A336570">원텍</a></th>
+<td class="rt-KR7336570007-change-ratio"><span class="num down">-2.97%</span></td>
+</tr>
+</tbody>
+</table>
+</div><div style="display: none;"></div></div>
+</div>
+<div class="AdvertB borderB mb40" id="boxSponsor"><ins class="kakao_ad_area" data-ad-height="120" data-ad-unit="DAN-1jig3px8vbvw1" data-ad-width="655" style="display:none;width:100%;"></ins>
+</div>
+<div class="tableB" id="boxMarketTrend"><div class="titB">
+<h4>실시간 마켓 트렌드</h4>
+<p id="labDiscription">10:05 실시간</p>
+</div>
+<div class="tab max">
+<ul class="box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="상승률 상위">상승률 상위</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="하락률 상위">하락률 상위</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="외국인 순매수">외국인 순매수</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="기관 순매수">기관 순매수</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="투자주체별">투자주체별</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="지수동향">지수동향</a>
+</li></ul>
+</div>
+<div class="box_contents"><div style="display: block;"><table>
+<colgroup>
+<col width="*"/>
+<col width="64"/>
+<col width="62"/>
+<col width="70"/>
+<col width="130"/>
+<col width="64"/>
+<col width="62"/>
+<col width="60"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="4">코스피</th>
+<th colspan="4">코스닥</th>
+</tr>
+<tr>
+<th class="lAlign first">종목명</th>
+<th class="rAlign">현재가</th>
+<th class="rAlign">전일비</th>
+<th class="rAlign last">등락률</th>
+<th class="lAlign">종목명</th>
+<th class="rAlign">현재가</th>
+<th class="rAlign">전일비</th>
+<th class="rAlign">등락률</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first">
+<th>
+<a class="txt" href="/quotes/A097230">
+                            HJ중공업
+                        </a>
+</th>
+<td class="rt-KR7097230007-price">
+<span class="num">24,450</span>
+</td>
+<td class="rt-KR7097230007-change-price">
+<span class="num up"><i>▲</i>3,200</span>
+</td>
+<td class="pR rt-KR7097230007-change-ratio">
+<span class="num up">+15.06%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A319400">현대무벡스</a>
+</th>
+<td class="rt-KR7319400008-price">
+<span class="num">6,050</span>
+</td>
+<td class="rt-KR7319400008-change-price">
+<span class="num up1"><i>↑</i>1,395</span>
+</td>
+<td class="rt-KR7319400008-change-ratio">
+<span class="num up1">+29.97%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/A005360">
+                            모나미
+                        </a>
+</th>
+<td class="rt-KR7005360003-price">
+<span class="num">2,545</span>
+</td>
+<td class="rt-KR7005360003-change-price">
+<span class="num up"><i>▲</i>180</span>
+</td>
+<td class="pR rt-KR7005360003-change-ratio">
+<span class="num up">+7.61%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A226950">올릭스</a>
+</th>
+<td class="rt-KR7226950004-price">
+<span class="num">75,000</span>
+</td>
+<td class="rt-KR7226950004-change-price">
+<span class="num up"><i>▲</i>16,200</span>
+</td>
+<td class="rt-KR7226950004-change-ratio">
+<span class="num up">+27.55%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/A272210">
+                            한화시스템
+                        </a>
+</th>
+<td class="rt-KR7272210006-price">
+<span class="num">54,900</span>
+</td>
+<td class="rt-KR7272210006-change-price">
+<span class="num up"><i>▲</i>3,800</span>
+</td>
+<td class="pR rt-KR7272210006-change-ratio">
+<span class="num up">+7.44%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A031860">디에이치엑스컴퍼니</a>
+</th>
+<td class="rt-KR7031860000-price">
+<span class="num">1,078</span>
+</td>
+<td class="rt-KR7031860000-change-price">
+<span class="num up"><i>▲</i>188</span>
+</td>
+<td class="rt-KR7031860000-change-ratio">
+<span class="num up">+21.12%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/Q510029">
+                            대신 S&amp;P 인버스 2X 천연가스 선물 ETN
+                        </a>
+</th>
+<td class="rt-KRG510000299-price">
+<span class="num">32,100</span>
+</td>
+<td class="rt-KRG510000299-change-price">
+<span class="num up"><i>▲</i>1,820</span>
+</td>
+<td class="pR rt-KRG510000299-change-ratio">
+<span class="num up">+6.01%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A199550">레이저옵텍</a>
+</th>
+<td class="rt-KR7199550005-price">
+<span class="num">8,350</span>
+</td>
+<td class="rt-KR7199550005-change-price">
+<span class="num up"><i>▲</i>1,410</span>
+</td>
+<td class="rt-KR7199550005-change-ratio">
+<span class="num up">+20.32%</span>
+</td>
+</tr>
+<tr class="last">
+<th>
+<a class="txt" href="/quotes/A077970">
+                            STX엔진
+                        </a>
+</th>
+<td class="rt-KR7077970002-price">
+<span class="num">46,400</span>
+</td>
+<td class="rt-KR7077970002-change-price">
+<span class="num up"><i>▲</i>2,550</span>
+</td>
+<td class="pR rt-KR7077970002-change-ratio">
+<span class="num up">+5.82%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A217500">러셀</a>
+</th>
+<td class="rt-KR7217500008-price">
+<span class="num">2,470</span>
+</td>
+<td class="rt-KR7217500008-change-price">
+<span class="num up"><i>▲</i>405</span>
+</td>
+<td class="rt-KR7217500008-change-ratio">
+<span class="num up">+19.61%</span>
+</td>
+</tr>
+<tr class="line">
+<th>
+<a class="txt" href="/quotes/Q570069">
+                            한투 레버리지 플래티넘 선물 ETN
+                        </a>
+</th>
+<td class="rt-KRG570000692-price">
+<span class="num">31,735</span>
+</td>
+<td class="rt-KRG570000692-change-price">
+<span class="num up"><i>▲</i>1,720</span>
+</td>
+<td class="pR rt-KRG570000692-change-ratio">
+<span class="num up">+5.73%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A034940">조아제약</a>
+</th>
+<td class="rt-KR7034940007-price">
+<span class="num">1,197</span>
+</td>
+<td class="rt-KR7034940007-change-price">
+<span class="num up"><i>▲</i>185</span>
+</td>
+<td class="rt-KR7034940007-change-ratio">
+<span class="num up">+18.28%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/A100840">
+                            SNT에너지
+                        </a>
+</th>
+<td class="rt-KR7100840008-price">
+<span class="num">62,200</span>
+</td>
+<td class="rt-KR7100840008-change-price">
+<span class="num up"><i>▲</i>3,300</span>
+</td>
+<td class="pR rt-KR7100840008-change-ratio">
+<span class="num up">+5.60%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A018000">유니슨</a>
+</th>
+<td class="rt-KR7018000000-price">
+<span class="num">1,220</span>
+</td>
+<td class="rt-KR7018000000-change-price">
+<span class="num up"><i>▲</i>173</span>
+</td>
+<td class="rt-KR7018000000-change-ratio">
+<span class="num up">+16.52%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/Q550092">
+                            N2 월간 레버리지 방위산업 Top5 ETN
+                        </a>
+</th>
+<td class="rt-KRG550000928-price">
+<span class="num">102,980</span>
+</td>
+<td class="rt-KRG550000928-change-price">
+<span class="num up"><i>▲</i>5,440</span>
+</td>
+<td class="pR rt-KRG550000928-change-ratio">
+<span class="num up">+5.58%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A380550">뉴로핏</a>
+</th>
+<td class="rt-KR7380550004-price">
+<span class="num">11,950</span>
+</td>
+<td class="rt-KR7380550004-change-price">
+<span class="num up"><i>▲</i>1,650</span>
+</td>
+<td class="rt-KR7380550004-change-ratio">
+<span class="num up">+16.02%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/Q500096">
+                            신한 인버스2X 천연가스 선물 ETN B
+                        </a>
+</th>
+<td class="rt-KRG500000960-price">
+<span class="num">28,805</span>
+</td>
+<td class="rt-KRG500000960-change-price">
+<span class="num up"><i>▲</i>1,465</span>
+</td>
+<td class="pR rt-KRG500000960-change-ratio">
+<span class="num up">+5.36%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A411080">샌즈랩</a>
+</th>
+<td class="rt-KR7411080005-price">
+<span class="num">8,790</span>
+</td>
+<td class="rt-KR7411080005-change-price">
+<span class="num up"><i>▲</i>1,010</span>
+</td>
+<td class="rt-KR7411080005-change-ratio">
+<span class="num up">+12.98%</span>
+</td>
+</tr>
+<tr class="last">
+<th>
+<a class="txt" href="/quotes/Q570084">
+                            한투 블룸버그 인버스 2X 천연가스선물 ETN
+                        </a>
+</th>
+<td class="rt-KRG570000841-price">
+<span class="num">32,200</span>
+</td>
+<td class="rt-KRG570000841-change-price">
+<span class="num up"><i>▲</i>1,620</span>
+</td>
+<td class="pR rt-KRG570000841-change-ratio">
+<span class="num up">+5.30%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A040350">크레오에스지</a>
+</th>
+<td class="rt-KR7040350001-price">
+<span class="num">408</span>
+</td>
+<td class="rt-KR7040350001-change-price">
+<span class="num up"><i>▲</i>43</span>
+</td>
+<td class="rt-KR7040350001-change-ratio">
+<span class="num up">+11.78%</span>
+</td>
+</tr>
+<tr class="line">
+<th>
+<a class="txt" href="/quotes/A042660">
+                            한화오션
+                        </a>
+</th>
+<td class="rt-KR7042660001-price">
+<span class="num">122,300</span>
+</td>
+<td class="rt-KR7042660001-change-price">
+<span class="num up"><i>▲</i>5,900</span>
+</td>
+<td class="pR rt-KR7042660001-change-ratio">
+<span class="num up">+5.07%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A381620">제닉스로보틱스</a>
+</th>
+<td class="rt-KR7381620004-price">
+<span class="num">9,180</span>
+</td>
+<td class="rt-KR7381620004-change-price">
+<span class="num up"><i>▲</i>910</span>
+</td>
+<td class="rt-KR7381620004-change-ratio">
+<span class="num up">+11.00%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/A085620">
+                            미래에셋생명
+                        </a>
+</th>
+<td class="rt-KR7085620003-price">
+<span class="num">7,785</span>
+</td>
+<td class="rt-KR7085620003-change-price">
+<span class="num up"><i>▲</i>375</span>
+</td>
+<td class="pR rt-KR7085620003-change-ratio">
+<span class="num up">+5.06%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A125490">한라캐스트</a>
+</th>
+<td class="rt-KR7125490003-price">
+<span class="num">4,820</span>
+</td>
+<td class="rt-KR7125490003-change-price">
+<span class="num up"><i>▲</i>450</span>
+</td>
+<td class="rt-KR7125490003-change-ratio">
+<span class="num up">+10.30%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/Q530136">
+                            삼성 인버스 2X 천연가스 선물 ETN D
+                        </a>
+</th>
+<td class="rt-KRG530001368-price">
+<span class="num">25,975</span>
+</td>
+<td class="rt-KRG530001368-change-price">
+<span class="num up"><i>▲</i>1,225</span>
+</td>
+<td class="pR rt-KRG530001368-change-ratio">
+<span class="num up">+4.95%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A387570">파인메딕스</a>
+</th>
+<td class="rt-KR7387570005-price">
+<span class="num">8,210</span>
+</td>
+<td class="rt-KR7387570005-change-price">
+<span class="num up"><i>▲</i>760</span>
+</td>
+<td class="rt-KR7387570005-change-ratio">
+<span class="num up">+10.20%</span>
+</td>
+</tr>
+<tr class="">
+<th>
+<a class="txt" href="/quotes/Q610054">
+                            메리츠 블룸버그 -2X 천연가스 선물 ETN(H)
+                        </a>
+</th>
+<td class="rt-KRG610000546-price">
+<span class="num">33,240</span>
+</td>
+<td class="rt-KRG610000546-change-price">
+<span class="num up"><i>▲</i>1,555</span>
+</td>
+<td class="pR rt-KRG610000546-change-ratio">
+<span class="num up">+4.91%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A219130">타이거일렉</a>
+</th>
+<td class="rt-KR7219130002-price">
+<span class="num">17,730</span>
+</td>
+<td class="rt-KR7219130002-change-price">
+<span class="num up"><i>▲</i>1,550</span>
+</td>
+<td class="rt-KR7219130002-change-ratio">
+<span class="num up">+9.58%</span>
+</td>
+</tr>
+<tr class="last">
+<th>
+<a class="txt" href="/quotes/A001045">
+                            CJ우
+                        </a>
+</th>
+<td class="rt-KR7001041003-price">
+<span class="num">89,000</span>
+</td>
+<td class="rt-KR7001041003-change-price">
+<span class="num up"><i>▲</i>4,000</span>
+</td>
+<td class="pR rt-KR7001041003-change-ratio">
+<span class="num up">+4.71%</span>
+</td>
+<th class="pL">
+<a class="txt" href="/quotes/A397030">에이프릴바이오</a>
+</th>
+<td class="rt-KR7397030008-price">
+<span class="num">25,400</span>
+</td>
+<td class="rt-KR7397030008-change-price">
+<span class="num up"><i>▲</i>2,200</span>
+</td>
+<td class="rt-KR7397030008-change-ratio">
+<span class="num up">+9.48%</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div><div style="display: none;"></div><div style="display: none;"></div><div style="display: none;"></div><div style="display: none;"></div><div style="display: none;"></div></div>
+</div>
+</div>
+<div class="rightW" id="boxRightSidebar"><div class="myB"><ul class="tab box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="나의 관심">나의 관심</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="최근 검색">최근 검색</a>
+</li></ul>
+<div class="box_contents"><div style="">
+<div class="box">
+<span>
+<p>로그인 하시면,<br/>나의 관심 리스트를<br/>볼 수 있습니다.</p>
+<a href="https://logins.daum.net/accounts/loginform.do?&amp;url=https%3A%2F%2Ffinance.daum.net%2Fdomestic" title="로그인">로그인</a>
+</span>
+</div>
+</div><div style="display: none;"></div></div>
+</div><div class="newsB"><ul class="tab box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="많이본 뉴스">많이본 뉴스</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="베스트칼럼">베스트칼럼</a>
+</li></ul>
+<div class="box_contents"><div style=""><ul class="list">
+<li><a href="https://v.daum.net/v/20250901224711369">"한 분도 두고 가지 않겠다" 라더니···백종원, 결국 자기 돈 100억 내놨다</a></li>
+<li><a href="https://v.daum.net/v/20250902065037325">"9억 아파트가 전재산인데"…70대 집주인, 현금 3억 구한 비결 [일확연금 노후부자]</a></li>
+<li><a href="https://v.daum.net/v/20250902050313681">"10년 지나도 월급 200만원"…이래서 '쉬었음' 청년 됐다</a></li>
+<li><a href="https://v.daum.net/v/20250901175724430">'하루에 2곳씩 망한다' 줄도산 공포…한국, 어쩌다가</a></li>
+<li><a href="https://v.daum.net/v/20250902060232557">3억짜리 로봇도 7000만원이면 '뚝딱'…짝퉁 거리, 로봇 메카로 변신했다[中 휴머노이드 리포트]①</a></li>
+<li><a href="https://v.daum.net/v/20250902080112460">"보안직원 단 4명, 비밀번호는 0000"…SGI서울보증 내부통제 도마</a></li>
+<li><a href="https://v.daum.net/v/20250902070219503">일본 교토 여행 가려고 했더니 어쩌나…'날벼락' 떨어졌다 [글로벌 머니 X파일]</a></li>
+<li><a href="https://v.daum.net/v/20250901154126149">"1억 넣었으면 5000만원 벌었다"…일주일간 폭등한 주식</a></li>
+<li><a href="https://v.daum.net/v/20250901180306721">로봇 700대가 전기차 조립…하루 1000대 뚝딱</a></li>
+<li><a href="https://v.daum.net/v/20250902065437372">돌반지 안 판 사람이 승자…금값 4개월만에 또 최고치</a></li>
+</ul>
+</div><div style="display: none;"></div></div>
+</div><div class="rankingB"><ul class="tab box_tabs"><li>
+<a class="on" href="javascript:void(0)" title="조회급등">조회급등</a>
+</li><li>
+<a class="" href="javascript:void(0)" title="인기토론">인기토론</a>
+</li></ul>
+<div class="box_contents"><div style=""><ul class="list">
+<!-- TODO: 구현을 해주세요. -->
+<li>
+<a href="/quotes/A005930">
+<em class="ty01">1</em>
+    삼성전자
+</a>
+<p class=""><i>-</i></p>
+</li><li>
+<a href="/quotes/A042660">
+<em class="ty02">2</em>
+    한화오션
+</a>
+<p class="up"><i>↑</i>1</p>
+</li><li>
+<a href="/quotes/A034020">
+<em class="ty03">3</em>
+    두산에너빌리티
+</a>
+<p class="down"><i>↓</i>1</p>
+</li><li>
+<a href="/quotes/A097230">
+<em class="ty04">4</em>
+    HJ중공업
+</a>
+<p class="up"><i>↑</i>1</p>
+</li><li>
+<a href="/quotes/A035420">
+<em class="ty05">5</em>
+    NAVER
+</a>
+<p class="up"><i>↑</i>4</p>
+</li><li>
+<a href="/quotes/A010140">
+<em class="ty06">6</em>
+    삼성중공업
+</a>
+<p class="down"><i>↓</i>2</p>
+</li><li>
+<a href="/quotes/A000660">
+<em class="ty07">7</em>
+    SK하이닉스
+</a>
+<p class="down"><i>↓</i>1</p>
+</li><li>
+<a href="/quotes/A035720">
+<em class="ty08">8</em>
+    카카오
+</a>
+<p class="new"><i>new</i></p>
+</li><li>
+<a href="/quotes/A064350">
+<em class="ty09">9</em>
+    현대로템
+</a>
+<p class="down"><i>↓</i>2</p>
+</li><li>
+<a href="/quotes/A077970">
+<em class="ty10">10</em>
+    STX엔진
+</a>
+<p class="new"><i>new</i></p>
+</li></ul>
+</div><div style="display: none;"></div></div>
+</div></div>
+</div>
+</div>
+<script src="https://t1.daumcdn.net/media/kraken/finance/resources/dist/250821161329/domesticIndexBundle.merged.js"></script>
+<div class="footer">
+<span>
+<div class="fl">
+<ul>
+<li><a href="http://policy.daum.net/info/info" target="_blank" title="서비스 약관/정책">서비스 약관/정책</a></li>
+<li><a href="http://cs.daum.net/faq/19.html" target="_blank" title="금융 고객센터">금융 고객센터</a></li>
+<li><a href="https://cs.daum.net/question/19.html" target="_blank" title="금융 문의하기">금융 문의하기</a></li>
+</ul>
+<p>카카오가 제공하는 증권정보는 단순히 정보의 제공을 목적으로 하고 있으며, 사이트에서 제공되는 정보는 오류 및 지연이<br/>발생될 수 있습니다. 제공된 정보이용에 따르는 책임은 이용자 본인에게 있으며, 카카오는 이용자의 투자결과에 따른<br/>법적 책임을 지지 않습니다.</p>
+</div>
+<div class="fr">
+<p>위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는<br/>글쓴이에 있으며 카카오의 입장과 다를 수 있습니다.</p>
+<p>Copyright (C) Kakao Corp. All rights reserved.</p>
+</div>
+</span>
+</div>
+<script>
+			window._IS_LOGGED = false;
+		</script>
+<script>
+	window._TIARA_OPTIONS = {
+		section: '국내',
+		page: '국내'
+	}
+</script>
+<script src="https://t1.daumcdn.net/media/kraken/finance/resources/dist/250821161329/tiara.merged.js"></script>
+</div>
+</body></html>
